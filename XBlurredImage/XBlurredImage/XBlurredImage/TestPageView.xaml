@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XBlurredImage.TestPageView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XBlurredImage.SourceCode.Controls;assembly=XBlurredImage">
+    <StackLayout>
+        <Label Text="Original Image" />
+        <Image>
+            <Image.Source>
+                <FileImageSource File="Trung.png" />
+            </Image.Source>
+        </Image>
+        <Label Text="Blurred Image" />
+        <controls:XBlurredImage>
+            <controls:XBlurredImage.Source>
+                <FileImageSource File="Trung.png" />
+            </controls:XBlurredImage.Source>
+        </controls:XBlurredImage>
+    </StackLayout>
+</ContentPage>
